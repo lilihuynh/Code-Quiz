@@ -146,3 +146,5 @@ function userInput() {
     msgDiv.classList.add("hide");
     userInitialEl.classList.remove("hide");
 }
+
+//when user click submit button, store input in local storage, connect highscore.html
