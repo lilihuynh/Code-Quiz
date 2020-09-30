@@ -139,3 +139,10 @@ function selectedAnwser(event) {
     finalScoreEl.textContent = "Your final score is " + score;
 
 }
+
+//define userInput funtion: after user anser the last question or time is up, move to user initial screen
+function userInput() {
+    questionsEl.classList.add("hide");
+    msgDiv.classList.add("hide");
+    userInitialEl.classList.remove("hide");
+}
