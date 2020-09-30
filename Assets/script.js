@@ -14,3 +14,14 @@ let currentQuestionIndex, shuffedQuestions;
 var nextEl = document.getElementById("next");
 var userEl = document.getElementById("user");
 var highscoreEl = document.getElementById("highscore");
+
+//user click start quiz button
+startEl.addEventListener("click", function () {
+
+    startScreenEl.classList.add("hide");
+    questionsEl.classList.remove("hide");
+    shuffedQuestions = questionsArray.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0;
+    timing();
+    setNextQuestion();
+});
