@@ -25,3 +25,17 @@ startEl.addEventListener("click", function () {
     timing();
     setNextQuestion();
 });
+
+// set timer
+function timing() {
+
+    var timeInterval = setInterval(function () {
+        timeEl.textContent = timeLeft + " seconds left";
+        timeLeft--;
+        if (timeLeft <= -1 || shuffedQuestions.length < currentQuestionIndex + 1) {
+            clearInterval(timeInterval);
+            userInput();
+        }
+    }, 1000);
+
+}
