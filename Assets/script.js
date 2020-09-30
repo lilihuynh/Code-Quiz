@@ -102,3 +102,12 @@ var questionsArray = [
     },
 
 ];
+
+//reset state
+function resetanswer() {
+    nextEl.classList.add("hide");
+    while (answerButton.firstChild) {
+        answerButtonEl.removeChild
+            (answerButtonEl.firstChild)
+    }
+}
