@@ -1,0 +1,64 @@
+.mycontainer{
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+  }
+  
+  a:link {
+    color:black;
+  }
+  .startButton{
+    background-color:rgb(2, 33, 41);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+  }
+  .hide {
+      display: none;
+  }
+  .mybtn {
+      background-color:rgb(128, 226, 250);
+      border: none;
+      color: black;
+      padding: 10px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;;
+      margin: 3px;
+      cursor: pointer;
+      border-radius: 12px;
+  }
+  
+  #msg {
+      visibility: hidden;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      height: 1.2em;
+      font-size: 1.2em;
+      text-align: center;
+    }
+  
+    #msg.correct,
+  #msg.wrong {
+    visibility: visible;
+  }
+  
+  #msg.correct {
+      color: #52b155;
+     
+    }
+    
+  #msg.wrong {
+      color: #611719;
+    }
