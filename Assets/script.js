@@ -117,3 +117,25 @@ function displayMessage(type, message) {
     msgDiv.textContent = message;
     msgDiv.setAttribute("class", type);
 }
+
+//when user select answer
+function selectedAnwser(event) {
+
+
+    var element = event.target;
+    var userAnnswer = element.getAttribute("data-answer");
+
+    if (userAnnswer === "true") {
+        score++;
+        scoreEl.innerText = score;
+        displayMessage("correct", "Correct!");
+
+    } else {
+
+        displayMessage("wrong", "Wrong!");
+        timeLeft -= 5;
+    };
+    nextEl.classList.remove("hide");
+    finalScoreEl.textContent = "Your final score is " + score;
+
+}
