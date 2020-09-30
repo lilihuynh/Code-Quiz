@@ -39,3 +39,9 @@ function timing() {
     }, 1000);
 
 }
+
+//user click next button
+nextEl.addEventListener("click", () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+})
