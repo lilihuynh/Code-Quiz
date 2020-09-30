@@ -1,0 +1,16 @@
+var startEl = document.getElementById("starting");
+var startScreenEl = document.getElementById("startScreen");
+var timeEl = document.getElementById("time");
+var questionsEl = document.getElementById("questions");
+var questEl = document.getElementById("quest");
+var answerButtonEl = document.getElementById("answerButton");
+var scoreEl = document.getElementById("score");
+var msgDiv = document.querySelector("#msg");
+var userInitialEl = document.querySelector("#userInitial");
+var finalScoreEl = document.getElementById("finalScore");
+var userSubmitEl = document.getElementById("userSubmit");
+var userInputEl = document.getElementById("userInput");
+let currentQuestionIndex, shuffedQuestions;
+var nextEl = document.getElementById("next");
+var userEl = document.getElementById("user");
+var highscoreEl = document.getElementById("highscore");
