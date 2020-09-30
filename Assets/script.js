@@ -148,3 +148,12 @@ function userInput() {
 }
 
 //when user click submit button, store input in local storage, connect highscore.html
+userSubmitEl.addEventListener("click", function (event) {
+    event.preventDefault();
+    var userScore = {
+        userInitial: userInputEl.value,
+        userhighscore: score,
+    }
+    localStorage.setItem("userScore", JSON.stringify(userScore));
+    window.document.location = "./highscores.html";
+})
