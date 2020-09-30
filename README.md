@@ -39,7 +39,7 @@ git clone https://github.com/lillianhuynh/Code-Quiz
 
 ## Usage
 
-You can start the game by clicking "Start Quiz" button. You will then be introduced to 3 multiple choice questions. Every correct answer will increase your score by 1. If the timer ends or you have finished all the question, your scores will be displayed on the highscore screen. Keep in mind, you only have 20 seconds to answer all questions, and 5 seconds will get deducted if you answer it wrong.
+You can start the game by clicking "Start Quiz" button. You will then be introduced to 3 multiple choice questions. Every correct answer will increase your score by 1. If the timer ends or you have finished all the question, your scores will be displayed on the highscore screen. Keep in mind, you only have 30 seconds to answer all questions, and 5 seconds will get deducted if you answer it wrong.
 
 | User Score    | End Game|
 |------------|------------|
