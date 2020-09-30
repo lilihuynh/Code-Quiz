@@ -111,3 +111,9 @@ function resetanswer() {
             (answerButtonEl.firstChild)
     }
 }
+
+//message pop up when user select answer
+function displayMessage(type, message) {
+    msgDiv.textContent = message;
+    msgDiv.setAttribute("class", type);
+}
