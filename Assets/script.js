@@ -55,3 +55,50 @@ function setNextQuestion() {
     showQuestion(shuffedQuestions[currentQuestionIndex])
 
 }
+
+function showQuestion(question) {
+    //questions
+
+    questEl.innerText = questionsArray[currentQuestionIndex].question;
+
+    //answer
+    questionsArray[currentQuestionIndex].answers.forEach(answer => {
+        var buttonEl = document.createElement("button");
+        buttonEl.innerText = answer.text;
+        buttonEl.classList.add("mybtn");
+        buttonEl.addEventListener("click", selectedAnwser);
+        buttonEl.setAttribute("data-answer", answer.correct);
+        answerButtonEl.appendChild(buttonEl);
+    })
+}
+
+var questionsArray = [
+    {
+        question: "Commonly used data types DO NOT include:",
+        answers: [
+            { text: "a. string", correct: false },
+            { text: "b. booleans", correct: false },
+            { text: "c. alerts", correct: true },
+            { text: "d. numbers", correct: false },
+        ]
+    },
+    {
+        question: "The condition in an if/else statement is enclosed within _____.",
+        answers: [
+            { text: "a. quotes", correct: false },
+            { text: "b. curly brakets", correct: true },
+            { text: "c. parentheses", correct: false },
+            { text: "d. squarebrackets", correct: false },
+        ]
+    },
+    {
+        question: "A very useful toll used during development and debugging for printing content to the debugger is:",
+        answers: [
+            { text: "a. JavaScript", correct: false },
+            { text: "b. for loops ", correct: false },
+            { text: "c. console.log", correct: false },
+            { text: "d. terminal/bash", correct: true },
+        ]
+    },
+
+];
