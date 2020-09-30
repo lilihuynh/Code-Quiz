@@ -45,3 +45,13 @@ nextEl.addEventListener("click", () => {
     currentQuestionIndex++;
     setNextQuestion();
 })
+
+//move to next question after user click nect button
+var timeLeft = 30;
+var score = 0;
+
+function setNextQuestion() {
+    resetanswer();
+    showQuestion(shuffedQuestions[currentQuestionIndex])
+
+}
